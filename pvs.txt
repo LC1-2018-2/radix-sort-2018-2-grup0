@@ -1,0 +1,102 @@
+Mudança de contexto
+alt+x cc
+
+Exibit status
+alt+x prove-theory  
+
+2 arquivos conjugados no PVS:
+.pvs -> arquivo da especificação
+.prf -> arquivo de provas
+
+
+Argumento do predicado em sorted?(l:list[nat]) é a lista
+ cons(n, null) != cons(null, n) => segunda opção não respeita os tipos
+visto que cons(nat * list[nat])
+
+car => começo da lista (head)
+cdr => resto da lista sem o head (cauda, do segundo elemento para frente)
+
+cursor sobre o lemma para verificar se existe erro de sintaxe
+alt+x tc => M-x tc   TYPE CHECK
+alt+x prove => M-x x-prove
+Rule? (induct "l")
+
+Aplicação de definição:
+nome da função
+(expand "isort") -> tenta aplicar em todo o lugar
+Especificar onde vai aplicar a definição:
+(expand "isort" 1)
+
+
+Para simplificação:
+(assert)
+
+Simplificação de conectivos proposicionais
+(prop)
+
+Alterar entre os ramos:
+(postpone)
+
+Voltar um passo:
+(undo)
+
+Simplificar fórmulas universais no consequente ou existenciais no antecedente:
+(skeep)
+
+Em Phi(x/x0) -> criação de variável é chamado de skolemização
+
+Dica: expressar propriedades como lemas!
+Pode ser útil em outros locais
+Como usar um resultado auxiliar:
+(lemma "insert_reserves_sorting")
+
+
+Instanciar uma variável de outra forma:
+(inst -1 "cons2_var" "cons1_var")
+
+Regras de divisão do sequente:
+(split)
+
+Regras de associação e implicação
+(flatten)
+
+Relatório das provas efetuadass
+M-x prove-theory
+
+Executar provas antigas passo a passo
+M-x step-proof
+
+Pula cada um dos passos
+Tab 1
+
+M-x reset-pvs
+
+PROVAS APENAS DAS CONJECTURAS
+
+verificar as provas (cursor sobre o lema)
+M-x x-step-proof
+(permite seguir a prova passa a passo)
+
+tipo dos dígitos entre 0 e 9 -> below[10]
+
+sair de uma prova
+Rule? quit
+Cuidado ao sair salvando a prova
+
+1) Buscar no próprio arquivo
+2) Buscar na biblioteca SORTING
+3) Buscar no prelude (biblioteca do próprio PVS)
+M-x view-prelude-code
+4) Buscas na biblioteca mod_lems
+
+Pesquisa de palavras:
+CRTL+S
+
+CTRL+R
+
+
+(lift-if) :
+para separar os ifs, usar (split)
+
+quando não é provado em uma desigualdade, usar:
+(expand ">")
