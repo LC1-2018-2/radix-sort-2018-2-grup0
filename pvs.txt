@@ -69,6 +69,7 @@ M-x step-proof
 Pula cada um dos passos
 Tab 1
 
+Reinicializa o pvs
 M-x reset-pvs
 
 PROVAS APENAS DAS CONJECTURAS
@@ -86,7 +87,7 @@ Cuidado ao sair salvando a prova
 1) Buscar no próprio arquivo
 2) Buscar na biblioteca SORTING
 3) Buscar no prelude (biblioteca do próprio PVS)
-M-x view-prelude-code
+M-x view-prelude-file
 4) Buscas na biblioteca mod_lems
 
 Pesquisa de palavras:
@@ -100,3 +101,18 @@ para separar os ifs, usar (split)
 
 quando não é provado em uma desigualdade, usar:
 (expand ">")
+
+Mostrar fórmulas escondidas
+M-x show-hidden-formulas
+
+Trazer a fórmula de volta
+(reveal <número da prova>)
+
+Resgatar provas
+M-x display-proofs-formula
+
+Modificar formula selecionada corrente
+-> usar comando anterior
+-> deixar o cursor sobre a formula que quer
+-> teclar "d"
+-> sair "q"
