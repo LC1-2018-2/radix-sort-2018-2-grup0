@@ -109,7 +109,20 @@
                                           (expand ">")
                                           (("1"
                                             (grind)
-                                            (("1" (postpone) nil nil))
+                                            (("1"
+                                              (reveal -3)
+                                              (("1"
+                                                (typepred
+                                                 "rem(10)(x!1)")
+                                                (("1"
+                                                  (assert)
+                                                  (("1"
+                                                    (postpone)
+                                                    nil
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
                                             nil))
                                           nil))
                                         nil))
@@ -2439,7 +2452,26 @@
  (merge_permutes 0
   (merge_permutes-1 nil 3747591401
    ("" (measure-induct+ "length(l1)+length(l2)" ("l1" "l2"))
-    (("" (postpone) nil nil)) nil)
+    (("" (skeep)
+      (("" (expand "merge" 1)
+        (("" (lift-if)
+          (("" (prop)
+            (("1" (expand "permutations") (("1" (propax) nil nil)) nil)
+             ("2" (expand "permutations") (("2" (propax) nil nil)) nil)
+             ("3" (postpone) nil nil)
+             ("4" (lemma "merge_length")
+              (("4" (inst -2 "x!1" "cdr(x!2)")
+                (("4" (expand "append")
+                  (("4" (lift-if)
+                    (("4" (prop) (("4" (postpone) nil nil)) nil)) nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
    ((occurrences def-decl "nat" sorting nil)
     (null adt-constructor-decl "(null?)" list_adt nil)
     (null? adt-recognizer-decl "[list -> boolean]" list_adt nil)
@@ -3500,8 +3532,8 @@
    shostak))
  (merge_sort_d_sorts 0
   (merge_sort_d_sorts-1 nil 3747760065
-   ("" (measure-induct+ "length(l)" ("l")) (("" (postpone) nil nil))
-    nil)
+   ("" (measure-induct+ "length(l)" ("l"))
+    (("" (skolem 1 "dec") (("" (postpone) nil nil)) nil)) nil)
    ((TRUE const-decl "bool" booleans nil)
     (merge_preserves_sort formula-decl nil radix_sort nil)
     (permutations_preserve_contents formula-decl nil sorting nil)
