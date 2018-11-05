@@ -1438,8 +1438,6 @@
      rationals nil)
     (expt def-decl "real" exponentiation nil)
     (posnat_expt application-judgement "posnat" exponentiation nil)
-    (d skolem-const-decl "posnat" radix_sort nil)
-    (b skolem-const-decl "posnat" radix_sort nil)
     (nonzero_real nonempty-type-eq-decl nil reals nil)
     (both_sides_div1 formula-decl nil real_props nil)
     (commutative_mult formula-decl nil number_fields nil)
@@ -1863,7 +1861,6 @@
     (number nonempty-type-decl nil numbers nil)
     (PRED type-eq-decl nil defined_types nil)
     (list type-decl nil list_adt nil)
-    (every adt-def-decl "boolean" list_adt nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
@@ -1888,7 +1885,6 @@
     (number nonempty-type-decl nil numbers nil)
     (PRED type-eq-decl nil defined_types nil)
     (list type-decl nil list_adt nil)
-    (every adt-def-decl "boolean" list_adt nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
@@ -1919,7 +1915,6 @@
     (number nonempty-type-decl nil numbers nil)
     (PRED type-eq-decl nil defined_types nil)
     (list type-decl nil list_adt nil)
-    (every adt-def-decl "boolean" list_adt nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
@@ -1957,7 +1952,6 @@
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
-    (every adt-def-decl "boolean" list_adt nil)
     (list type-decl nil list_adt nil)
     (PRED type-eq-decl nil defined_types nil)
     (number nonempty-type-decl nil numbers nil)
@@ -1977,7 +1971,6 @@
     (number nonempty-type-decl nil numbers nil)
     (PRED type-eq-decl nil defined_types nil)
     (list type-decl nil list_adt nil)
-    (every adt-def-decl "boolean" list_adt nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
@@ -1999,7 +1992,6 @@
     (number nonempty-type-decl nil numbers nil)
     (PRED type-eq-decl nil defined_types nil)
     (list type-decl nil list_adt nil)
-    (every adt-def-decl "boolean" list_adt nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
@@ -2021,7 +2013,6 @@
     (number nonempty-type-decl nil numbers nil)
     (PRED type-eq-decl nil defined_types nil)
     (list type-decl nil list_adt nil)
-    (every adt-def-decl "boolean" list_adt nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
@@ -2056,7 +2047,6 @@
     (number nonempty-type-decl nil numbers nil)
     (PRED type-eq-decl nil defined_types nil)
     (list type-decl nil list_adt nil)
-    (every adt-def-decl "boolean" list_adt nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
@@ -2091,7 +2081,6 @@
     (number nonempty-type-decl nil numbers nil)
     (PRED type-eq-decl nil defined_types nil)
     (list type-decl nil list_adt nil)
-    (every adt-def-decl "boolean" list_adt nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
@@ -2132,7 +2121,6 @@
     (boolean nonempty-type-decl nil booleans nil)
     (bool nonempty-type-eq-decl nil booleans nil)
     (PRED type-eq-decl nil defined_types nil)
-    (every adt-def-decl "boolean" list_adt nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
@@ -2183,7 +2171,6 @@
     (boolean nonempty-type-decl nil booleans nil)
     (bool nonempty-type-eq-decl nil booleans nil)
     (PRED type-eq-decl nil defined_types nil)
-    (every adt-def-decl "boolean" list_adt nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
@@ -2254,7 +2241,6 @@
     (number nonempty-type-decl nil numbers nil)
     (PRED type-eq-decl nil defined_types nil)
     (list type-decl nil list_adt nil)
-    (every adt-def-decl "boolean" list_adt nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
@@ -2280,7 +2266,6 @@
     (number nonempty-type-decl nil numbers nil)
     (PRED type-eq-decl nil defined_types nil)
     (list type-decl nil list_adt nil)
-    (every adt-def-decl "boolean" list_adt nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
@@ -2361,7 +2346,6 @@
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
-    (every adt-def-decl "boolean" list_adt nil)
     (PRED type-eq-decl nil defined_types nil)
     (bool nonempty-type-eq-decl nil booleans nil)
     (boolean nonempty-type-decl nil booleans nil)
@@ -2456,7 +2440,6 @@
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
-    (every adt-def-decl "boolean" list_adt nil)
     (PRED type-eq-decl nil defined_types nil)
     (bool nonempty-type-eq-decl nil booleans nil)
     (boolean nonempty-type-decl nil booleans nil)
@@ -2553,7 +2536,6 @@
     (boolean nonempty-type-decl nil booleans nil)
     (bool nonempty-type-eq-decl nil booleans nil)
     (PRED type-eq-decl nil defined_types nil)
-    (every adt-def-decl "boolean" list_adt nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
@@ -2785,7 +2767,6 @@
     (boolean nonempty-type-decl nil booleans nil)
     (bool nonempty-type-eq-decl nil booleans nil)
     (PRED type-eq-decl nil defined_types nil)
-    (every adt-def-decl "boolean" list_adt nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
@@ -3602,18 +3583,6 @@
      rationals nil)
     (posint_times_posint_is_posint application-judgement "posint"
      integers nil)
-    (j_1 skolem-const-decl "below[length(append(x!1, cdr(x!2)))]"
-     radix_sort nil)
-    (j skolem-const-decl
-     "{j: below[length(cons(car(x!2), merge(x!1, cdr(x!2), d)))] | i <= j}"
-     radix_sort nil)
-    (i skolem-const-decl
-     "below[length(cons(car(x!2), merge(x!1, cdr(x!2), d)))]"
-     radix_sort nil)
-    (i skolem-const-decl "below[length(cdr(x!2))]" radix_sort nil)
-    (j skolem-const-decl "{j: below[length(cdr(x!2))] | i <= j}"
-     radix_sort nil)
-    (j skolem-const-decl "below[length(cdr(x!2))]" radix_sort nil)
     (cdr adt-accessor-decl "[(cons?) -> list]" list_adt nil)
     (cons? adt-recognizer-decl "[list -> boolean]" list_adt nil)
     (merge_permutes formula-decl nil radix_sort nil)
@@ -3635,17 +3604,6 @@
      "(strict_total_order?[real])" real_props nil)
     (NOT const-decl "[bool -> bool]" booleans nil)
     (nth_append formula-decl nil sorting nil)
-    (j_1 skolem-const-decl "below[length(append(cdr(x!1), x!2))]"
-     radix_sort nil)
-    (j skolem-const-decl
-     "{j: below[length(cons(car(x!1), merge(cdr(x!1), x!2, d)))] | i <= j}"
-     radix_sort nil)
-    (i skolem-const-decl
-     "below[length(cons(car(x!1), merge(cdr(x!1), x!2, d)))]"
-     radix_sort nil)
-    (d skolem-const-decl "nat" radix_sort nil)
-    (x!2 skolem-const-decl "list[nat]" radix_sort nil)
-    (x!1 skolem-const-decl "list[nat]" radix_sort nil)
     (car adt-accessor-decl "[(cons?) -> T]" list_adt nil)
     (cons adt-constructor-decl "[[T, list] -> (cons?)]" list_adt nil)
     (- const-decl "[numfield, numfield -> numfield]" number_fields nil)
@@ -3654,10 +3612,6 @@
      real_props nil)
     (real_le_is_total_order name-judgement "(total_order?[real])"
      real_props nil)
-    (i skolem-const-decl "below[length(cdr(x!1))]" radix_sort nil)
-    (j skolem-const-decl "{j: below[length(cdr(x!1))] | i <= j}"
-     radix_sort nil)
-    (i skolem-const-decl "below[length(cdr(x!1))]" radix_sort nil)
     (null? adt-recognizer-decl "[list -> boolean]" list_adt nil)
     (null adt-constructor-decl "(null?)" list_adt nil)
     (append_null formula-decl nil list_props nil)
@@ -3706,7 +3660,6 @@
     (number_field_pred const-decl "[number -> boolean]" number_fields
      nil)
     (AND const-decl "[bool, bool -> bool]" booleans nil)
-    (every adt-def-decl "boolean" list_adt nil)
     (PRED type-eq-decl nil defined_types nil)
     (bool nonempty-type-eq-decl nil booleans nil)
     (boolean nonempty-type-decl nil booleans nil)
@@ -3736,7 +3689,134 @@
                           (inst -1
                            "suffix(x!1, floor(length(x!1) / 2))")
                           (("2" (inst -1 "d")
-                            (("2" (postpone) nil nil)) nil))
+                            (("2" (rewrite "length_suffix")
+                              (("2"
+                                (rewrite "length_prefix")
+                                (("2"
+                                  (assert)
+                                  (("2"
+                                    (inst
+                                     -2
+                                     "prefix(x!1, floor(length(x!1) / 2))"
+                                     "suffix(x!1, floor(length(x!1) / 2))"
+                                     "d")
+                                    (("2"
+                                      (reveal -1)
+                                      (("2"
+                                        (inst
+                                         -1
+                                         "merge_sort(prefix(x!1, floor(length(x!1) / 2)), d)"
+                                         "merge_sort(suffix(x!1, floor(length(x!1) / 2)), d)"
+                                         "d")
+                                        (("2"
+                                          (split -4)
+                                          (("1" (postpone) nil nil)
+                                           ("2"
+                                            (hide -1 -2 -3 2)
+                                            (("2"
+                                              (typepred
+                                               "prefix(x!1, floor(length(x!1) / 2))")
+                                              (("2"
+                                                (lemma length_prefix)
+                                                (("2"
+                                                  (inst
+                                                   -1
+                                                   "x!1"
+                                                   "floor(length(x!1) / 2)")
+                                                  (("2"
+                                                    (hide -2)
+                                                    (("2"
+                                                      (lemma
+                                                       "contents_prefix")
+                                                      (("2"
+                                                        (lemma
+                                                         "app_prefix_suffix")
+                                                        (("2"
+                                                          (hide -2)
+                                                          (("2"
+                                                            (inst
+                                                             -1
+                                                             "x!1"
+                                                             "floor(length(x!1) / 2)")
+                                                            (("2"
+                                                              (expand
+                                                               "is_sorted_ud?")
+                                                              (("2"
+                                                                (skeep)
+                                                                (("2"
+                                                                  (lemma
+                                                                   "contents_prefix")
+                                                                  (("2"
+                                                                    (inst
+                                                                     -1
+                                                                     "x!1"
+                                                                     "floor(length(x!1) / 2)"
+                                                                     "i")
+                                                                    (("1"
+                                                                      (inst
+                                                                       -4
+                                                                       "i"
+                                                                       "j")
+                                                                      (("1"
+                                                                        (lemma
+                                                                         "contents_prefix")
+                                                                        (("1"
+                                                                          (inst
+                                                                           -1
+                                                                           "x!1"
+                                                                           "floor(length(x!1) / 2)"
+                                                                           "j")
+                                                                          (("1"
+                                                                            (replace
+                                                                             -1
+                                                                             1)
+                                                                            (("1"
+                                                                              (replace
+                                                                               -2
+                                                                               1)
+                                                                              (("1"
+                                                                                (propax)
+                                                                                nil
+                                                                                nil))
+                                                                              nil))
+                                                                            nil)
+                                                                           ("2"
+                                                                            (assert)
+                                                                            nil
+                                                                            nil))
+                                                                          nil))
+                                                                        nil)
+                                                                       ("2"
+                                                                        (postpone)
+                                                                        nil
+                                                                        nil))
+                                                                      nil)
+                                                                     ("2"
+                                                                      (postpone)
+                                                                      nil
+                                                                      nil))
+                                                                    nil))
+                                                                  nil))
+                                                                nil))
+                                                              nil))
+                                                            nil))
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil)
+                                           ("3" (postpone) nil nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
                           nil))
                         nil))
                       nil))
