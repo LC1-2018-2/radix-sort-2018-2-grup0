@@ -3710,7 +3710,160 @@
                                          "d")
                                         (("2"
                                           (split -4)
-                                          (("1" (postpone) nil nil)
+                                          (("1"
+                                            (split -3)
+                                            (("1"
+                                              (hide -4)
+                                              (("1"
+                                                (split -3)
+                                                (("1" (propax) nil nil)
+                                                 ("2" (propax) nil nil)
+                                                 ("3" (propax) nil nil)
+                                                 ("4"
+                                                  (skeep)
+                                                  (("4"
+                                                    (expand
+                                                     "is_sorted_ud?"
+                                                     -3)
+                                                    (("4"
+                                                      (hide 2)
+                                                      (("4"
+                                                        (lemma
+                                                         "contents_suffix")
+                                                        (("4"
+                                                          (lemma
+                                                           "contents_prefix")
+                                                          (("4"
+                                                            (expand
+                                                             "is_sorted_ud?"
+                                                             -3)
+                                                            (("4"
+                                                              (expand
+                                                               "is_sorted_ud?"
+                                                               -4)
+                                                              (("4"
+                                                                (inst
+                                                                 -5
+                                                                 "i"
+                                                                 "j")
+                                                                (("1"
+                                                                  (lemma
+                                                                   "app_prefix_suffix")
+                                                                  (("1"
+                                                                    (inst
+                                                                     -5
+                                                                     "i"
+                                                                     "j")
+                                                                    (("1"
+                                                                      (inst
+                                                                       -4
+                                                                       "i"
+                                                                       "j")
+                                                                      (("1"
+                                                                        (postpone)
+                                                                        nil
+                                                                        nil)
+                                                                       ("2"
+                                                                        (postpone)
+                                                                        nil
+                                                                        nil)
+                                                                       ("3"
+                                                                        (postpone)
+                                                                        nil
+                                                                        nil))
+                                                                      nil)
+                                                                     ("2"
+                                                                      (postpone)
+                                                                      nil
+                                                                      nil))
+                                                                    nil))
+                                                                  nil)
+                                                                 ("2"
+                                                                  (postpone)
+                                                                  nil
+                                                                  nil)
+                                                                 ("3"
+                                                                  (postpone)
+                                                                  nil
+                                                                  nil))
+                                                                nil))
+                                                              nil))
+                                                            nil))
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil)
+                                             ("2"
+                                              (hide -1 -2 -3 2)
+                                              (("2"
+                                                (lemma "length_suffix")
+                                                (("2"
+                                                  (inst
+                                                   -1
+                                                   "x!1"
+                                                   "floor(length(x!1) / 2)")
+                                                  (("2"
+                                                    (lemma
+                                                     "contents_suffix")
+                                                    (("2"
+                                                      (lemma
+                                                       "app_prefix_suffix")
+                                                      (("2"
+                                                        (expand
+                                                         "is_sorted_ud?")
+                                                        (("2"
+                                                          (skeep)
+                                                          (("2"
+                                                            (inst
+                                                             -4
+                                                             "i"
+                                                             "j")
+                                                            (("1"
+                                                              (inst
+                                                               -1
+                                                               "x!1"
+                                                               "floor(length(x!1) / 2)")
+                                                              (("1"
+                                                                (inst
+                                                                 -2
+                                                                 "x!1"
+                                                                 "floor(length(x!1) / 2)"
+                                                                 "i")
+                                                                (("1"
+                                                                  (lemma
+                                                                   "contents_suffix")
+                                                                  (("1"
+                                                                    (postpone)
+                                                                    nil
+                                                                    nil))
+                                                                  nil)
+                                                                 ("2"
+                                                                  (grind)
+                                                                  nil
+                                                                  nil))
+                                                                nil))
+                                                              nil)
+                                                             ("2"
+                                                              (grind)
+                                                              nil
+                                                              nil)
+                                                             ("3"
+                                                              (grind)
+                                                              nil
+                                                              nil))
+                                                            nil))
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil)
+                                             ("3" (grind) nil nil))
+                                            nil)
                                            ("2"
                                             (hide -1 -2 -3 2)
                                             (("2"
@@ -3787,12 +3940,12 @@
                                                                           nil))
                                                                         nil)
                                                                        ("2"
-                                                                        (postpone)
+                                                                        (grind)
                                                                         nil
                                                                         nil))
                                                                       nil)
                                                                      ("2"
-                                                                      (postpone)
+                                                                      (grind)
                                                                       nil
                                                                       nil))
                                                                     nil))
@@ -3808,7 +3961,7 @@
                                                 nil))
                                               nil))
                                             nil)
-                                           ("3" (postpone) nil nil))
+                                           ("3" (grind) nil nil))
                                           nil))
                                         nil))
                                       nil))
