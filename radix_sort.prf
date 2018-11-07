@@ -3923,8 +3923,30 @@
                                                                              -5
                                                                              -6)
                                                                             (("1"
-                                                                              (postpone)
-                                                                              nil
+                                                                              (reveal
+                                                                               -1
+                                                                               -2
+                                                                               -3)
+                                                                              (("1"
+                                                                                (lemma
+                                                                                 "merge_sort_permutes")
+                                                                                (("1"
+                                                                                  (inst
+                                                                                   -1
+                                                                                   "x!1"
+                                                                                   "d")
+                                                                                  (("1"
+                                                                                    (inst
+                                                                                     -2
+                                                                                     "x!1"
+                                                                                     "floor(length(x!1)/2)")
+                                                                                    (("1"
+                                                                                      (postpone)
+                                                                                      nil
+                                                                                      nil))
+                                                                                    nil))
+                                                                                  nil))
+                                                                                nil))
                                                                               nil))
                                                                             nil))
                                                                           nil))
