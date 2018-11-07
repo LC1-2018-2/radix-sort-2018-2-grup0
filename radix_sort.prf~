@@ -70,6 +70,81 @@
     (mult_divides2 application-judgement "(divides(m))" divides nil))
    nil))
  (d_digits_gt 0
+  (t2
+   "Não foi possível provar. Talvez o lema devesse ser maior ou igual, visto que quando o número é 10 ou 100 ... os valores são iguais de ambos os lados"
+   3750507381
+   ("" (measure-induct+ "n" ("n"))
+    (("" (inst -1 "ndiv(x!1, 10)")
+      (("" (expand "n_digits" 1)
+        (("" (lift-if)
+          (("" (split 1)
+            (("1" (flatten)
+              (("1" (expand ">")
+                (("1" (expand "^")
+                  (("1" (expand "expt")
+                    (("1" (expand "expt") (("1" (propax) nil nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil)
+             ("2" (flatten 1)
+              (("2" (split -1)
+                (("1" (grind)
+                  (("1" (typepred "ndiv(x!1, 10)")
+                    (("1" (assert)
+                      (("1" (hide -1)
+                        (("1" (hide -1 1)
+                          (("1" (grind)
+                            (("1" (reveal -1)
+                              (("1"
+                                (grind)
+                                (("1"
+                                  (lemma "ndiv_lt")
+                                  (("1"
+                                    (inst -1 "10" "x!1")
+                                    (("1"
+                                      (typepred "ndiv(x!1, 10)")
+                                      (("1"
+                                        (typepred "rem(10)(x!1)")
+                                        (("1"
+                                          (hide -2 -4)
+                                          (("1"
+                                            (rewrite "ndiv_lt")
+                                            (("1"
+                                              (lemma "ndiv_lt")
+                                              (("1"
+                                                (inst -1 "10" "x!1")
+                                                (("1"
+                                                  (postpone)
+                                                  nil
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil)
+                 ("2" (typepred "ndiv(x!1, 10)")
+                  (("2" (assert) nil nil)) nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   nil shostak)
   (okay "quase la" 3750009306
    ("" (measure-induct+ "n" ("n"))
     (("" (inst -1 "ndiv(x!1, 10)")
@@ -3760,8 +3835,24 @@
                                                                        "i"
                                                                        "j")
                                                                       (("1"
-                                                                        (postpone)
-                                                                        nil
+                                                                        (assert)
+                                                                        (("1"
+                                                                          (reveal
+                                                                           -3)
+                                                                          (("1"
+                                                                            (hide
+                                                                             -1
+                                                                             -2
+                                                                             -3
+                                                                             -4
+                                                                             -5
+                                                                             -6)
+                                                                            (("1"
+                                                                              (postpone)
+                                                                              nil
+                                                                              nil))
+                                                                            nil))
+                                                                          nil))
                                                                         nil)
                                                                        ("2"
                                                                         (postpone)
