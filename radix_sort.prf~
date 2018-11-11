@@ -2837,8 +2837,36 @@
                                                                                                           (("1"
                                                                                                             (skeep)
                                                                                                             (("1"
-                                                                                                              (postpone)
-                                                                                                              nil
+                                                                                                              (inst
+                                                                                                               -7
+                                                                                                               "x!1"
+                                                                                                               "floor(length(x!1) / 2)"
+                                                                                                               "j_1")
+                                                                                                              (("1"
+                                                                                                                (postpone)
+                                                                                                                nil
+                                                                                                                nil)
+                                                                                                               ("2"
+                                                                                                                (typepred
+                                                                                                                 "j_1")
+                                                                                                                (("2"
+                                                                                                                  (assert)
+                                                                                                                  (("2"
+                                                                                                                    (lemma
+                                                                                                                     "length_suffix")
+                                                                                                                    (("2"
+                                                                                                                      (inst
+                                                                                                                       -1
+                                                                                                                       "x!1"
+                                                                                                                       "floor(length(x!1) / 2)")
+                                                                                                                      (("2"
+                                                                                                                        (assert)
+                                                                                                                        nil
+                                                                                                                        nil))
+                                                                                                                      nil))
+                                                                                                                    nil))
+                                                                                                                  nil))
+                                                                                                                nil))
                                                                                                               nil))
                                                                                                             nil))
                                                                                                           nil))
