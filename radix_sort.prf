@@ -2803,11 +2803,80 @@
                                                                                        "lower_half_x1"
                                                                                        "_")
                                                                                       (("1"
-                                                                                        (lemma
-                                                                                         "permutations_is_commutative")
+                                                                                        (assert)
                                                                                         (("1"
-                                                                                          (postpone)
-                                                                                          nil
+                                                                                          (lemma
+                                                                                           "permutations_is_commutative")
+                                                                                          (("1"
+                                                                                            (inst
+                                                                                             -1
+                                                                                             "merge_sort(lower_half_x1, d)"
+                                                                                             "lower_half_x1")
+                                                                                            (("1"
+                                                                                              (lemma
+                                                                                               "permutations_is_commutative")
+                                                                                              (("1"
+                                                                                                (inst
+                                                                                                 -1
+                                                                                                 "merge_sort(upper_half_x1, d)"
+                                                                                                 "upper_half_x1")
+                                                                                                (("1"
+                                                                                                  (assert)
+                                                                                                  (("1"
+                                                                                                    (inst
+                                                                                                     -3
+                                                                                                     "j")
+                                                                                                    (("1"
+                                                                                                      (assert)
+                                                                                                      (("1"
+                                                                                                        (skeep)
+                                                                                                        (("1"
+                                                                                                          (inst
+                                                                                                           -4
+                                                                                                           "i")
+                                                                                                          (("1"
+                                                                                                            (skeep)
+                                                                                                            (("1"
+                                                                                                              (inst
+                                                                                                               -7
+                                                                                                               "x!1"
+                                                                                                               "floor(length(x!1) / 2)"
+                                                                                                               "j_1")
+                                                                                                              (("1"
+                                                                                                                (postpone)
+                                                                                                                nil
+                                                                                                                nil)
+                                                                                                               ("2"
+                                                                                                                (typepred
+                                                                                                                 "j_1")
+                                                                                                                (("2"
+                                                                                                                  (assert)
+                                                                                                                  (("2"
+                                                                                                                    (lemma
+                                                                                                                     "length_suffix")
+                                                                                                                    (("2"
+                                                                                                                      (inst
+                                                                                                                       -1
+                                                                                                                       "x!1"
+                                                                                                                       "floor(length(x!1) / 2)")
+                                                                                                                      (("2"
+                                                                                                                        (assert)
+                                                                                                                        nil
+                                                                                                                        nil))
+                                                                                                                      nil))
+                                                                                                                    nil))
+                                                                                                                  nil))
+                                                                                                                nil))
+                                                                                                              nil))
+                                                                                                            nil))
+                                                                                                          nil))
+                                                                                                        nil))
+                                                                                                      nil))
+                                                                                                    nil))
+                                                                                                  nil))
+                                                                                                nil))
+                                                                                              nil))
+                                                                                            nil))
                                                                                           nil))
                                                                                         nil))
                                                                                       nil))
