@@ -2556,7 +2556,54 @@
     (nth def-decl "T" list_props nil)
     (length def-decl "nat" list_props nil))
    shostak))
- (merge_sort_d_sorts 0
+ (merge_sort_d_sorts 3
+  (try_dc4 "" 3750895726
+   ("" (measure-induct+ "length(l)" ("l"))
+    (("" (skeep)
+      (("" (expand merge_sort 1)
+        (("" (lift-if 1)
+          (("" (prop)
+            (("1" (expand is_sorted_ud?) (("1" (assert) nil nil)) nil)
+             ("2" (lemma merge_preserves_sort)
+              (("2" (lemma length_prefix)
+                (("2" (lemma length_suffix)
+                  (("2"
+                    (name-replace "halflen" "floor(length(x!1) / 2)")
+                    (("2" (name-replace "pref" "prefix(x!1, halflen)")
+                      (("2"
+                        (name-replace "suff" "suffix(x!1, halflen)")
+                        (("2" (reveal -1 -2 -3)
+                          (("2" (inst -4 x!1 halflen)
+                            (("2" (inst -5 x!1 halflen)
+                              (("2"
+                                (lemma contents_prefix)
+                                (("2"
+                                  (lemma contents_suffix)
+                                  (("2"
+                                    (inst
+                                     -8
+                                     "merge_sort(pref, d)"
+                                     "merge_sort(pref, d)"
+                                     d)
+                                    (("2" (postpone) nil nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   nil shostak)
   (try_dc3 "inst merge" 3750888008
    ("" (measure-induct+ "length(l)" ("l"))
     (("" (skeep)
@@ -2716,7 +2763,180 @@
                                       (("4"
                                         (lemma
                                          nth_of_list_is_nth_append_list)
-                                        (("4" (postpone) nil nil))
+                                        (("4"
+                                          (hide 2 3)
+                                          (("4"
+                                            (copy -10)
+                                            (("4"
+                                              (hide -11)
+                                              (("4"
+                                                (copy -1)
+                                                (("4"
+                                                  (inst -1 pref_x1)
+                                                  (("4"
+                                                    (inst -1 d)
+                                                    (("4"
+                                                      (inst -2 suff_x1)
+                                                      (("4"
+                                                        (inst -2 d)
+                                                        (("4"
+                                                          (inst
+                                                           -4
+                                                           x!1
+                                                           halflen_x1)
+                                                          (("4"
+                                                            (replace
+                                                             -10
+                                                             -4)
+                                                            (("4"
+                                                              (replace
+                                                               -9
+                                                               -4)
+                                                              (("4"
+                                                                (split
+                                                                 -1)
+                                                                (("1"
+                                                                  (postpone)
+                                                                  nil
+                                                                  nil)
+                                                                 ("2"
+                                                                  (hide
+                                                                   -1
+                                                                   -2
+                                                                   -4
+                                                                   -6
+                                                                   2)
+                                                                  (("2"
+                                                                    (expand
+                                                                     is_sorted_ud?)
+                                                                    (("2"
+                                                                      (skeep)
+                                                                      (("2"
+                                                                        (inst
+                                                                         -7
+                                                                         i!1
+                                                                         j!1)
+                                                                        (("1"
+                                                                          (copy
+                                                                           -3)
+                                                                          (("1"
+                                                                            (inst
+                                                                             -3
+                                                                             x!1
+                                                                             halflen_x1)
+                                                                            (("1"
+                                                                              (inst
+                                                                               -4
+                                                                               x!1
+                                                                               halflen_x1
+                                                                               j!1)
+                                                                              (("1"
+                                                                                (inst
+                                                                                 -1
+                                                                                 x!1
+                                                                                 halflen_x1
+                                                                                 i!1)
+                                                                                (("1"
+                                                                                  (grind)
+                                                                                  nil
+                                                                                  nil)
+                                                                                 ("2"
+                                                                                  (grind)
+                                                                                  nil
+                                                                                  nil))
+                                                                                nil)
+                                                                               ("2"
+                                                                                (grind)
+                                                                                nil
+                                                                                nil))
+                                                                              nil))
+                                                                            nil))
+                                                                          nil)
+                                                                         ("2"
+                                                                          (grind)
+                                                                          nil
+                                                                          nil)
+                                                                         ("3"
+                                                                          (inst
+                                                                           -2
+                                                                           x!1
+                                                                           halflen_x1)
+                                                                          (("3"
+                                                                            (grind)
+                                                                            nil
+                                                                            nil))
+                                                                          nil))
+                                                                        nil))
+                                                                      nil))
+                                                                    nil))
+                                                                  nil)
+                                                                 ("3"
+                                                                  (inst
+                                                                   -5
+                                                                   x!1
+                                                                   halflen_x1)
+                                                                  (("3"
+                                                                    (replace
+                                                                     -9
+                                                                     -5)
+                                                                    (("3"
+                                                                      (typepred
+                                                                       halflen_x1)
+                                                                      (("3"
+                                                                        (replace
+                                                                         -8
+                                                                         1)
+                                                                        (("3"
+                                                                          (expand
+                                                                           length
+                                                                           1)
+                                                                          (("3"
+                                                                            (lift-if)
+                                                                            (("3"
+                                                                              (prop)
+                                                                              (("1"
+                                                                                (postpone)
+                                                                                nil
+                                                                                nil)
+                                                                               ("2"
+                                                                                (postpone)
+                                                                                nil
+                                                                                nil)
+                                                                               ("3"
+                                                                                (postpone)
+                                                                                nil
+                                                                                nil)
+                                                                               ("4"
+                                                                                (postpone)
+                                                                                nil
+                                                                                nil)
+                                                                               ("5"
+                                                                                (postpone)
+                                                                                nil
+                                                                                nil)
+                                                                               ("6"
+                                                                                (postpone)
+                                                                                nil
+                                                                                nil))
+                                                                              nil))
+                                                                            nil))
+                                                                          nil))
+                                                                        nil))
+                                                                      nil))
+                                                                    nil))
+                                                                  nil))
+                                                                nil))
+                                                              nil))
+                                                            nil))
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
                                         nil))
                                       nil))
                                     nil))
@@ -3091,90 +3311,335 @@
                                             (("3"
                                               (split -3)
                                               (("1"
-                                                (split -4)
+                                                (lemma length_prefix)
                                                 (("1"
-                                                  (lemma
-                                                   contents_prefix)
+                                                  (split -5)
                                                   (("1"
                                                     (lemma
-                                                     contents_suffix)
+                                                     app_prefix_suffix)
                                                     (("1"
                                                       (inst
                                                        -1
                                                        x!1
-                                                       "floor(length(x!1) / 2)"
-                                                       j)
+                                                       "floor(length(x!1) / 2)")
                                                       (("1"
-                                                        (inst
-                                                         -2
-                                                         x!1
-                                                         "floor(length(x!1) / 2)"
-                                                         i)
+                                                        (replace -5 -1)
                                                         (("1"
                                                           (replace
                                                            -6
-                                                           -2)
+                                                           -1)
                                                           (("1"
-                                                            (replace
-                                                             -5
-                                                             -1)
+                                                            (hide -3)
                                                             (("1"
-                                                              (expand
-                                                               is_sorted_ud?)
+                                                              (assert)
+                                                              (("1"
+                                                                (expand
+                                                                 is_sorted_ud?)
+                                                                (("1"
+                                                                  (assert)
+                                                                  (("1"
+                                                                    (lemma
+                                                                     contents_prefix)
+                                                                    (("1"
+                                                                      (lemma
+                                                                       contents_suffix)
+                                                                      (("1"
+                                                                        (inst
+                                                                         -1
+                                                                         x!1
+                                                                         "floor(length(x!1) / 2)"
+                                                                         j)
+                                                                        (("1"
+                                                                          (inst
+                                                                           -2
+                                                                           x!1
+                                                                           "floor(length(x!1) / 2)"
+                                                                           i)
+                                                                          (("1"
+                                                                            (replace
+                                                                             -7
+                                                                             -2)
+                                                                            (("1"
+                                                                              (replace
+                                                                               -6
+                                                                               -1)
+                                                                              (("1"
+                                                                                (inst
+                                                                                 -4
+                                                                                 i
+                                                                                 j)
+                                                                                (("1"
+                                                                                  (inst
+                                                                                   -5
+                                                                                   i
+                                                                                   j)
+                                                                                  (("1"
+                                                                                    (postpone)
+                                                                                    nil
+                                                                                    nil)
+                                                                                   ("2"
+                                                                                    (postpone)
+                                                                                    nil
+                                                                                    nil)
+                                                                                   ("3"
+                                                                                    (postpone)
+                                                                                    nil
+                                                                                    nil))
+                                                                                  nil)
+                                                                                 ("2"
+                                                                                  (postpone)
+                                                                                  nil
+                                                                                  nil))
+                                                                                nil))
+                                                                              nil))
+                                                                            nil)
+                                                                           ("2"
+                                                                            (postpone)
+                                                                            nil
+                                                                            nil))
+                                                                          nil)
+                                                                         ("2"
+                                                                          (postpone)
+                                                                          nil
+                                                                          nil))
+                                                                        nil))
+                                                                      nil))
+                                                                    nil))
+                                                                  nil))
+                                                                nil))
+                                                              nil))
+                                                            nil))
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil)
+                                                   ("2"
+                                                    (hide -2 -3 2)
+                                                    (("2"
+                                                      (lemma
+                                                       contents_prefix)
+                                                      (("2"
+                                                        (expand
+                                                         is_sorted_ud?)
+                                                        (("2"
+                                                          (skeep)
+                                                          (("2"
+                                                            (copy -1)
+                                                            (("2"
+                                                              (inst
+                                                               -1
+                                                               x!1
+                                                               "floor(length(x!1) / 2)"
+                                                               i!1)
                                                               (("1"
                                                                 (inst
-                                                                 -7
-                                                                 i
-                                                                 "j + floor(length(x!1) / 2)")
+                                                                 -2
+                                                                 x!1
+                                                                 "floor(length(x!1) / 2)"
+                                                                 j!1)
                                                                 (("1"
-                                                                  (replace
-                                                                   -1
-                                                                   -7
-                                                                   RL)
+                                                                  (inst
+                                                                   -5
+                                                                   i!1
+                                                                   j!1)
                                                                   (("1"
-                                                                    (replace
-                                                                     -2
-                                                                     -7
-                                                                     RL)
+                                                                    (replaces)
                                                                     (("1"
-                                                                      (postpone)
+                                                                      (grind)
                                                                       nil
                                                                       nil))
                                                                     nil))
                                                                   nil)
                                                                  ("2"
-                                                                  (postpone)
-                                                                  nil
+                                                                  (typepred
+                                                                   j!1)
+                                                                  (("2"
+                                                                    (inst
+                                                                     -4
+                                                                     x!1
+                                                                     "floor(length(x!1) / 2)")
+                                                                    (("2"
+                                                                      (replace
+                                                                       -5
+                                                                       -4)
+                                                                      (("2"
+                                                                        (grind)
+                                                                        nil
+                                                                        nil))
+                                                                      nil))
+                                                                    nil))
+                                                                  nil))
+                                                                nil)
+                                                               ("2"
+                                                                (hide
+                                                                 -1
+                                                                 -4
+                                                                 2)
+                                                                (("2"
+                                                                  (typepred
+                                                                   i!1)
+                                                                  (("2"
+                                                                    (inst
+                                                                     -2
+                                                                     x!1
+                                                                     "floor(length(x!1) / 2)")
+                                                                    (("2"
+                                                                      (replace
+                                                                       -3
+                                                                       -2)
+                                                                      (("2"
+                                                                        (grind)
+                                                                        nil
+                                                                        nil))
+                                                                      nil))
+                                                                    nil))
                                                                   nil))
                                                                 nil))
                                                               nil))
                                                             nil))
-                                                          nil)
-                                                         ("2"
-                                                          (postpone)
-                                                          nil
                                                           nil))
-                                                        nil)
-                                                       ("2"
-                                                        (postpone)
+                                                        nil))
+                                                      nil))
+                                                    nil)
+                                                   ("3"
+                                                    (inst
+                                                     -1
+                                                     x!1
+                                                     "floor(length(x!1) / 2)")
+                                                    (("3"
+                                                      (replace -4 -1)
+                                                      (("3"
+                                                        (grind)
                                                         nil
                                                         nil))
                                                       nil))
                                                     nil))
-                                                  nil)
-                                                 ("2"
-                                                  (postpone)
-                                                  nil
-                                                  nil)
-                                                 ("3"
-                                                  (postpone)
-                                                  nil
                                                   nil))
                                                 nil)
-                                               ("2" (postpone) nil nil)
+                                               ("2"
+                                                (hide -3 2)
+                                                (("2"
+                                                  (assert)
+                                                  (("2"
+                                                    (lemma
+                                                     contents_suffix)
+                                                    (("2"
+                                                      (name-replace
+                                                       "half"
+                                                       "floor(length(x!1)/2)")
+                                                      (("2"
+                                                        (reveal -1)
+                                                        (("2"
+                                                          (expand
+                                                           is_sorted_ud?)
+                                                          (("2"
+                                                            (skeep)
+                                                            (("2"
+                                                              (copy -2)
+                                                              (("2"
+                                                                (inst
+                                                                 -1
+                                                                 x!1
+                                                                 half
+                                                                 i!1)
+                                                                (("1"
+                                                                  (inst
+                                                                   -3
+                                                                   x!1
+                                                                   half
+                                                                   j!1)
+                                                                  (("1"
+                                                                    (assert)
+                                                                    (("1"
+                                                                      (inst
+                                                                       -6
+                                                                       "half + i!1"
+                                                                       "half + j!1")
+                                                                      (("1"
+                                                                        (assert)
+                                                                        nil
+                                                                        nil))
+                                                                      nil))
+                                                                    nil)
+                                                                   ("2"
+                                                                    (typepred
+                                                                     j!1)
+                                                                    (("2"
+                                                                      (assert)
+                                                                      (("2"
+                                                                        (hide
+                                                                         -7
+                                                                         2)
+                                                                        (("2"
+                                                                          (lemma
+                                                                           length_suffix)
+                                                                          (("2"
+                                                                            (inst
+                                                                             -1
+                                                                             x!1
+                                                                             half)
+                                                                            (("2"
+                                                                              (replace
+                                                                               -6
+                                                                               -1)
+                                                                              (("2"
+                                                                                (grind)
+                                                                                nil
+                                                                                nil))
+                                                                              nil))
+                                                                            nil))
+                                                                          nil))
+                                                                        nil))
+                                                                      nil))
+                                                                    nil))
+                                                                  nil)
+                                                                 ("2"
+                                                                  (typepred
+                                                                   i!1)
+                                                                  (("2"
+                                                                    (lemma
+                                                                     length_suffix)
+                                                                    (("2"
+                                                                      (inst
+                                                                       -1
+                                                                       x!1
+                                                                       half)
+                                                                      (("2"
+                                                                        (replace
+                                                                         -5
+                                                                         -1)
+                                                                        (("2"
+                                                                          (grind)
+                                                                          nil
+                                                                          nil))
+                                                                        nil))
+                                                                      nil))
+                                                                    nil))
+                                                                  nil))
+                                                                nil))
+                                                              nil))
+                                                            nil))
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil)
                                                ("3"
-                                                (postpone)
-                                                nil
+                                                (lemma length_suffix)
+                                                (("3"
+                                                  (inst
+                                                   -1
+                                                   x!1
+                                                   "floor(length(x!1) / 2)")
+                                                  (("3"
+                                                    (replace -2 -1)
+                                                    (("3"
+                                                      (grind)
+                                                      nil
+                                                      nil))
+                                                    nil))
+                                                  nil))
                                                 nil))
                                               nil))
                                             nil))
